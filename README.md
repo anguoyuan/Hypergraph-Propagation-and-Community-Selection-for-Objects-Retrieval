@@ -1,6 +1,7 @@
 # Hypergraph Propagation and Community Selection for Objects Retrieval
 
-Download and unzip the graph, features, and data folders. 
+Download and unzip the graph, features, and data folders.  
+The running directory structure is:
 
 ├─data  
 │  ├─roxford  
