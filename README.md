@@ -4,7 +4,8 @@
 1. Download and unzip the graph, features, and data folders.  
 2. By modifying the code in retrieval.py, you can choose the retrieval dataset and whether to use hypergraph propagation and community selection.  
 3. run retrieval.py  
-The running directory structure is:
+
+The running directory structure should be:
 
 ├─data  
 │  ├─roxford  
