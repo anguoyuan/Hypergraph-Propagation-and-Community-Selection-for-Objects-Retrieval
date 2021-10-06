@@ -4,7 +4,6 @@ Download and unzip the graph, features, and data folders.
 
 -data  
 -features  
-
   -roxford_np_delg_features  
   -rparis_np_delg_features 
   
