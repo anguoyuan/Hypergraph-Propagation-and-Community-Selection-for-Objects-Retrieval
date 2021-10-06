@@ -1,5 +1,6 @@
 # Hypergraph Propagation and Community Selection for Objects Retrieval
 
+## How to use the code  
 Download and unzip the graph, features, and data folders.  
 The running directory structure is:
 
