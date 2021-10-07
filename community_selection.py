@@ -10,7 +10,7 @@ from scipy.stats import entropy
 import numpy as np
 import pickle
 
-def prepare_community_selection(dataset):  
+def prepare_community_selection(dataset,COMMUNITY_SELECTION):  
     
     graph_directaries={'roxford':'graph/delg/roxford/0301/',
                  'rparis': 'graph/delg/rparis/',
@@ -35,35 +35,36 @@ def prepare_community_selection(dataset):
     elif _dataset=='rparis':
         with open('data/rparis/gnd_rparis6k.pkl','rb') as f:
             _dataset_meta=pickle.load(f)
-            
-    #prepare the delg match 
-    global _geom,_features,_qgeom,_qfeatures
-    
-    def _read_delg_index():
-        #return the list of index features and locations; list of array
-        geom,features=[],[]
-        for img in _dataset_meta['imlist']:
-            geom_path='features/'+_dataset+'_np_delg_features/'+img+'_local_locations.npy'
-            features_path='features/'+_dataset+'_np_delg_features/'+img+'_local_descriptors.npy'
-            geom.append(np.load(geom_path))
-            features.append(np.load(features_path))
-            
-        return geom, features
-    
-    _geom,_features=_read_delg_index()
-    
-    def _read_delg_query():
-        #return the list of index features and locations; list of array
-        geom,features=[],[]
-        for img in _dataset_meta['qimlist']:
-            geom_path='features/'+_dataset+'_np_delg_features/'+img+'_local_locations.npy'
-            features_path='features/'+_dataset+'_np_delg_features/'+img+'_local_descriptors.npy'
-            geom.append(np.load(geom_path))
-            features.append(np.load(features_path))
-            
-        return geom, features
-    
-    _qgeom,_qfeatures=_read_delg_query()
+       
+    if COMMUNITY_SELECTION==2:
+        #prepare the delg match 
+        global _geom,_features,_qgeom,_qfeatures
+        
+        def _read_delg_index():
+            #return the list of index features and locations; list of array
+            geom,features=[],[]
+            for img in _dataset_meta['imlist']:
+                geom_path='features/'+_dataset+'_np_delg_features/'+img+'_local_locations.npy'
+                features_path='features/'+_dataset+'_np_delg_features/'+img+'_local_descriptors.npy'
+                geom.append(np.load(geom_path))
+                features.append(np.load(features_path))
+                
+            return geom, features
+        
+        _geom,_features=_read_delg_index()
+        
+        def _read_delg_query():
+            #return the list of index features and locations; list of array
+            geom,features=[],[]
+            for img in _dataset_meta['qimlist']:
+                geom_path='features/'+_dataset+'_np_delg_features/'+img+'_local_locations.npy'
+                features_path='features/'+_dataset+'_np_delg_features/'+img+'_local_descriptors.npy'
+                geom.append(np.load(geom_path))
+                features.append(np.load(features_path))
+                
+            return geom, features
+        
+        _qgeom,_qfeatures=_read_delg_query()
 
 missing=[]
 def extract_sub_graph(first_search,bound=100):
