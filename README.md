@@ -11,6 +11,7 @@ The running directory structure should be:
 │  ├─roxford  
 │  └─rparis  
 ├─features  
+│  ├─distractor_np_delg_features   
 │  ├─roxford_np_delg_features   
 │  └─rparis_np_delg_features  
 ├─graph  
