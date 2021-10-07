@@ -17,9 +17,9 @@ The running directory structure should be:
 │  └─rparis_np_delg_features  
 ├─graph  
 │  └─delg  
-│  |   ├─R1Moxford  
-│      ├─R1Mparis  
-│      ├─roxford  
-│      └─rparis  
+│ | | | ├─R1Moxford  
+│ | | | ├─R1Mparis  
+│ | | | ├─roxford  
+│ | | | └─rparis  
 ├─utils  
 
