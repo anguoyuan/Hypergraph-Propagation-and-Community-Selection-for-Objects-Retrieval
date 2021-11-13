@@ -25,4 +25,3 @@ The running directory structure should be:
 
 ## to do  
 Offline RANSAC code.  
-Explaination about implementation of hypergraph propagation.
