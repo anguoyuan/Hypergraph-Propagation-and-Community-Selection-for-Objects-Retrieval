@@ -23,3 +23,6 @@ The running directory structure should be:
 │ | | | └─rparis  
 ├─utils  
 
+## to do  
+Offline RANSAC code.  
+Explaination about implementation of hypergraph propagation.
