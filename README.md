@@ -1,7 +1,7 @@
 # Hypergraph Propagation and Community Selection for Objects Retrieval
 
-## How to use the code  
-1. Download and unzip the 'graph' and 'features' folders.  
+## to use the code  
+1. Download and unzip the 'features' and 'graph' folders. They are the global DELG features and our precomputed matching information. If you want to try on different features, you can get the matching information by run the offline computing code.
 2. Open retrieval.py, and choose the retrieval dataset and whether to use hypergraph propagation and community selection.  
 3. run retrieval.py  
 4. To implement geometric verificatoin, you need to download the ROxford/RParis datasets and extract their local features, which can be achieved by using Radenovic and Cao's open code: https://github.com/filipradenovic/revisitop.git and https://github.com/tensorflow/models/tree/master/research/delf  
@@ -23,5 +23,12 @@ The running directory structure should be:
 │ | | | └─rparis  
 ├─utils  
 
-## to do  
-Offline RANSAC code.  
+## offline pre-computing  
+under Hypergraph_Propagation_and_Community_Selection_for_Objects_Retrieval/  
+from offline_RANSAC import pre_match   
+pre_match(0,100000,2)  
+
+Ack: The main matching code and parameter setting is copy from DELG open code.  
+We only have the cpu version currently. We used several cpus and a large amount of memory to get the result on R1M distractors. 
+However, the complexity of the offline process is O(1). And gpu will accelarate this process a lot theratically.  
+We would be grateful if anyone offers a(or introduce an existing) gpu version geometric-verification code.
