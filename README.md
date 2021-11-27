@@ -31,6 +31,5 @@ from offline_RANSAC import pre_match
 pre_match(0,100000,2)  
 
 Ack: The main matching code and parameter setting is copy from DELG open code.  
-We only have the cpu version currently. We used several cpus and a large amount of memory to get the result on R1M distractors. 
-However, the complexity of the offline process is O(1). And gpu will accelarate this process a lot theoretically.  
-We would be grateful if anyone offers a (or introduce an existing) gpu version geometric-verification code.
+We only have the CPU version currently. We used several CPUs and a large amount of memory to get the result on R1M distractors. However, the complexity of the offline process is O(1). So GPU will accelerate this process a lot theoretically.
+We would be grateful if anyone offered a (or introduced an existing) GPU version geometric-verification code.
