@@ -1,9 +1,9 @@
 # Diffusion/propagation can boost retrieval performance without any additional training.
-* If you only have a global feature for each image and want a convenient performance improvement, try ordinary graph diffusion (Tutorial, Dmytro's implementation)
+* If you only have a global feature for each image and want a convenient performance improvement, try ordinary graph diffusion ([Tutorial](https://github.com/anguoyuan/Diffusion-for-retrievl-python), Dmytro's [implementation](https://github.com/ducha-aiki/manifold-diffusion))
 
 * If you want a better performance, try the following hypergraph propagation solution. To the best of our knowledge, this is the current (2023/06/30) best open-source result on ROxford and RParis. The additional memory and time cost is low compared with other reranking approaches, such as spatial verification.
 
-* ![image](https://github.com/anguoyuan/Hypergraph-Propagation-and-Community-Selection-for-Objects-Retrieval/assets/91877920/0fff873c-bfc7-4a62-a474-aece7ee2a22b)
+ ![image](https://github.com/anguoyuan/Hypergraph-Propagation-and-Community-Selection-for-Objects-Retrieval/assets/91877920/0fff873c-bfc7-4a62-a474-aece7ee2a22b)
 
 
 
