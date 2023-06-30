@@ -10,6 +10,16 @@
 # Hypergraph Propagation and Community Selection for Objects Retrieval
 This is the code of our NeurIPS2021 paper: Hypergraph Propagation and Community Selection for Objects Retrieval. You can check the detail from our project page: https://sgvr.kaist.ac.kr/~guoyuan/hypergraph_propagation/ . 
 
+```bibtex
+@article{an2021hypergraph,
+  title={Hypergraph propagation and community selection for objects retrieval},
+  author={An, Guoyuan and Huo, Yuchi and Yoon, Sung-Eui},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={3596--3608},
+  year={2021}
+}
+
 ## to use the code  
 1. Download and unzip the 'features' and 'graph' folders. They are the global DELG features and our precomputed matching information. If you want to try on different features, you can get the matching information by running the offline computing code.
 2. Open retrieval.py, and choose the retrieval dataset and whether to use hypergraph propagation and community selection.  
