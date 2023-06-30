@@ -1,3 +1,5 @@
+# It boosts the 
+
 # Hypergraph Propagation and Community Selection for Objects Retrieval
 This is the code of our NeurIPS2021 paper: Hypergraph Propagation and Community Selection for Objects Retrieval. You can check the detail from our project page: https://sgvr.kaist.ac.kr/~guoyuan/hypergraph_propagation/ . 
 
