@@ -19,6 +19,7 @@ This is the code of our NeurIPS2021 paper: Hypergraph Propagation and Community 
   pages={3596--3608},
   year={2021}
 }
+```
 
 ## to use the code  
 1. Download and unzip the 'features' and 'graph' folders. They are the global DELG features and our precomputed matching information. If you want to try on different features, you can get the matching information by running the offline computing code.
