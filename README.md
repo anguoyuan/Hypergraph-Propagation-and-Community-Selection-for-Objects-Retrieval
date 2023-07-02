@@ -22,7 +22,7 @@ This is the code of our NeurIPS2021 paper: Hypergraph Propagation and Community 
 ```
 
 ## to use the code  
-1. Download and unzip the 'features' and 'graph' folders. They are the global DELG features and our precomputed matching information. If you want to try on different features, you can get the matching information by running the offline computing code.
+1. Download and unzip the 'features' and 'graph' folders from the [project page](https://sgvr.kaist.ac.kr/~guoyuan/hypergraph_propagation/). They are the global DELG features and our precomputed matching information. If you want to try on different features, you can get the matching information by running the offline computing code.
 2. Open retrieval.py, and choose the retrieval dataset and whether to use hypergraph propagation and community selection.  
 3. run retrieval.py  
 4. To implement geometric verificatoin, you need to download the ROxford/RParis datasets and extract their local features, which can be achieved by using Radenovic and Cao's open code: https://github.com/filipradenovic/revisitop.git and https://github.com/tensorflow/models/tree/master/research/delf  
