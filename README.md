@@ -5,10 +5,10 @@
 
  ![image](https://github.com/anguoyuan/Hypergraph-Propagation-and-Community-Selection-for-Objects-Retrieval/assets/91877920/0fff873c-bfc7-4a62-a474-aece7ee2a22b)
 
-
+# By analyzing the structure and properties of a graph, one can model and predict the uncertainty associated with the results of a particular query.
 
 # Hypergraph Propagation and Community Selection for Objects Retrieval
-This is the code of our NeurIPS2021 paper: Hypergraph Propagation and Community Selection for Objects Retrieval. You can check the detail from our project page: https://sgvr.kaist.ac.kr/~guoyuan/hypergraph_propagation/ . 
+This is the official implementation of the NeurIPS2021 paper: Hypergraph Propagation and Community Selection for Objects Retrieval. You can check the detail from our project page: https://sgvr.kaist.ac.kr/~guoyuan/hypergraph_propagation/ . 
 
 ```bibtex
 @article{an2021hypergraph,
