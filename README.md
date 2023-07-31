@@ -5,7 +5,7 @@
 
  ![image](https://github.com/anguoyuan/Hypergraph-Propagation-and-Community-Selection-for-Objects-Retrieval/assets/91877920/0fff873c-bfc7-4a62-a474-aece7ee2a22b)
 
-# Graph information (the community selection technique) can predict the uncertainty associated with the results of a particular query.
+# Want to control uncertainty associated with the results of a particular query? Try the following community selection technique.
 
 # Hypergraph Propagation and Community Selection for Objects Retrieval
 This is the official implementation of the NeurIPS2021 paper: Hypergraph Propagation and Community Selection for Objects Retrieval. You can check the detail from our project page: https://sgvr.kaist.ac.kr/~guoyuan/hypergraph_propagation/ . 
