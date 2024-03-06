@@ -10,16 +10,7 @@
 # Hypergraph Propagation and Community Selection for Objects Retrieval
 This is the official implementation of the NeurIPS2021 paper: Hypergraph Propagation and Community Selection for Objects Retrieval. To quickly understand the high-level idea, check these [slides](https://github.com/anguoyuan/Hypergraph-Propagation-and-Community-Selection-for-Objects-Retrieval/blob/main/Hypergraph_Community_Guoyuan.pptx). You can check the detail from our project page: https://sgvr.kaist.ac.kr/~guoyuan/hypergraph_propagation/ . 
 
-```bibtex
-@article{an2021hypergraph,
-  title={Hypergraph propagation and community selection for objects retrieval},
-  author={An, Guoyuan and Huo, Yuchi and Yoon, Sung-Eui},
-  journal={Advances in Neural Information Processing Systems},
-  volume={34},
-  pages={3596--3608},
-  year={2021}
-}
-```
+
 
 ## to use the code  
 1. Download and unzip the 'features' and 'graph' folders from the [project page](https://sgvr.kaist.ac.kr/~guoyuan/hypergraph_propagation/). They are the global DELG features and our precomputed matching information. If you want to try on different features, you can get the matching information by running the offline computing code.
@@ -53,3 +44,14 @@ pre_match(0,100000,2)
 Ack: The main matching code and parameter setting is copy from DELG open code.  
 We only have the CPU version currently. We used several CPUs and a large amount of memory to get the result on R1M distractors. However, the complexity of the offline process is O(1). So GPU will accelerate this process a lot theoretically.
 We would be grateful if anyone offered a (or introduced an existing) GPU version geometric-verification code.
+
+```bibtex
+@article{an2021hypergraph,
+  title={Hypergraph propagation and community selection for objects retrieval},
+  author={An, Guoyuan and Huo, Yuchi and Yoon, Sung-Eui},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={3596--3608},
+  year={2021}
+}
+```
